@@ -1,6 +1,6 @@
 # Common Python Automation Scripts
 
-This repository contains a collection of Python automation scripts that simplify everyday tasks. I created these scripts to save time, increase productivity, and make repetitive processes easier. These tools can be useful for anyone looking to automate common tasks like downloading files, processing images, and scraping URLs.
+This repository contains a collection of Python automation scripts that simplify everyday tasks. I created these scripts to save time, increase productivity, and make repetitive processes easier. These tools can be useful for anyone looking to automate common tasks like downloading files, processing images, and scraping URLs. Obviously these are made for some repetitive tasks I needed to do. Not meant for everyone.
 
 ## Scripts Overview
 

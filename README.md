@@ -19,6 +19,25 @@ This repository contains a collection of Python automation scripts that simplify
 5. **Download Files from Web URLs**  
    Downloads PDF, TXT, and ZIP files from webpages listed in a text file and saves them in an organized folder.
 
+6. **📁 Folder Structure Generator (GUI)**  
+  Simple drag-and-type GUI app to generate folder structures — useful for project scaffolding or organization.
+
+7. ## 📁 Project Boilerplate Generator
+
+A simple GUI tool that helps you scaffold basic folder structures for common web and mobile development frameworks. Ideal for quickly spinning up a new project with a clean, organized directory layout.
+
+### 🔧 Supported Project Types:
+- **React**
+- **Next.js**
+- **Express**
+- **Flutter**
+
+## 🖥️ Convert to Executable (Optional)
+
+You can convert any of these scripts into a `.exe` app for easier usage on Windows:
+
+```bash
+pyinstaller --onefile your_script.py
 ## Technologies Used
 
 - **yt-dlp** for downloading audio/video

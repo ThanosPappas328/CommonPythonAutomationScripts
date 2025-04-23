@@ -1,39 +1,32 @@
-# 🛠️ Common Python Automation Scripts
+# Common Python Automation Scripts
 
-A personal collection of Python scripts that automate small, repetitive tasks—saving time, clicks, and sanity.
+This repository contains a collection of Python automation scripts that simplify everyday tasks. I created these scripts to save time, increase productivity, and make repetitive processes easier. These tools can be useful for anyone looking to automate common tasks like downloading files, processing images, and scraping URLs.
 
-## 📜 What’s Inside
+## Scripts Overview
 
-| Script | Description |
-|--------|-------------|
-| `video_downloader.py` | Download videos from a given URL (YouTube etc.) |
-| `file_scraper.py` | Scrape and download files from provided URLs |
-| `text_cleaner.py` | Clean and format raw text files (e.g., remove symbols, standardize spacing) |
-| `screenshot_organizer.py` | Organize screenshots into folders by date |
-| `bulk_renamer.py` | Rename a batch of files in a customizable format |
+1. **Download Audio/Video with yt-dlp**  
+   Downloads and converts audio or video files from URLs in a text file. Supports MP3 and WAV formats.
 
-## 🧰 Tech Used
+2. **URL Exporter with Web Scraping (Tkinter GUI)**  
+   Scrapes webpages for downloadable files (e.g., PDFs, ZIPs) and saves them as `.url` shortcut files. Includes a simple GUI built with Tkinter.
 
-- Python 3
-- `requests`, `os`, `re`, `yt-dlp`, `BeautifulSoup`
-- Terminal-friendly utilities
+3. **Resize and Crop Images**  
+   Resizes and crops images to specific dimensions while maintaining the aspect ratio. Prevents overwriting files by generating unique filenames.
 
-## 🚀 How to Use
+4. **Background Removal from Images**  
+   Removes the background from images using `rembg`. Processes images in bulk and logs errors.
 
-Clone the repo and run any script directly:
+5. **Download Files from Web URLs**  
+   Downloads PDF, TXT, and ZIP files from webpages listed in a text file and saves them in an organized folder.
 
-```bash
-python video_downloader.py
+## Technologies Used
 
-Make sure to read any comments or config requirements at the top of each script.
+- **yt-dlp** for downloading audio/video
+- **requests** and **BeautifulSoup** for web scraping
+- **Tkinter** for GUI development
+- **Pillow** and **rembg** for image processing
+- **tqdm** for progress bars
 
-🤔 Why I Built This
-These scripts solve everyday problems I ran into—like downloading a lecture video, organizing messy screenshots, or scraping reference PDFs.
-Instead of doing things manually, I automated them. ✨
+## License
 
-💡 Future Plans
-Add a basic CLI for selecting tasks
-
-GUI version with Tkinter or PyQT
-
-Package everything as a single installable tool
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

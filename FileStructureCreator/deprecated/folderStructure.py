@@ -4,15 +4,29 @@ from tkinter import filedialog, messagebox
 
 
 def create_structure(base_path, structure_text):
-    folders = [line.strip() for line in structure_text.strip().splitlines() if line.strip()]
+    lines = [line.rstrip() for line in structure_text.strip().splitlines() if line.strip()]
+    stack = []  # (indent_level, folder_path)
     created_folders = []
 
-    for folder in folders:
-        full_path = os.path.join(base_path, folder)
+    for line in lines:
+        stripped = line.lstrip()
+        indent = len(line) - len(stripped)
+
+        # Find parent based on indent
+        while stack and stack[-1][0] >= indent:
+            stack.pop()
+
+        # Compute full path
+        parent_path = stack[-1][1] if stack else base_path
+        full_path = os.path.join(parent_path, stripped.rstrip('/'))
+
         os.makedirs(full_path, exist_ok=True)
         created_folders.append(full_path)
 
+        stack.append((indent, full_path))
+
     return created_folders
+
 
 
 def browse_folder():

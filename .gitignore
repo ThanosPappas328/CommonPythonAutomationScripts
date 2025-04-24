@@ -1,0 +1,43 @@
+# =================================
+# Custom Git Ignore
+# Add your project-specific exclusions below
+# =================================
+
+# === System Files ===
+# (Safe to keep in most projects)
+.DS_Store
+Thumbs.db
+
+# === IDE/Editor ===
+# Uncomment your editor's config folder
+.vscode/
+.idea/
+
+# =================================
+# YOUR CUSTOM RULES (Add below)
+# =================================
+
+# Example folder exclusion:
+    /ApiRequestGenerator/
+    /YT_TikTok_Titles_Tags/
+# /node_modules/
+
+# Example file pattern exclusion:
+# *.temp
+
+# === Directories ===
+# Add folders to ignore (use trailing /)
+# /build/
+# /dist/
+# /vendor/
+
+# === File Patterns ===
+# Add specific file types/extensions
+# *.log
+# *.cache
+# *.backup
+
+# === Specific Files ===
+    future scripts.txt
+# config.ini
+# local_settings.py
